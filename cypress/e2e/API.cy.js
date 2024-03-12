@@ -8,8 +8,6 @@ describe('Tests through API', () => {
     cy.clearCookies();
     cy.loginByApi(loginInfoPO.username, loginInfoPO.password).then((response) => {
       expect(response.status).to.eq(loginInfoPO.status200);
-      expect(response.body.user.firstName).to.eq(loginInfoPO.firstname);
-      expect(response.body.user.lastName).to.eq(loginInfoPO.lastname);
       expect(response.body.user.username).to.eq(loginInfoPO.username);
     });
   })

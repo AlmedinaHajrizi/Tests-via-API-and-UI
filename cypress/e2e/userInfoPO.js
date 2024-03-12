@@ -11,5 +11,6 @@ const status204 = 204;
 
 export default {
     userId,
-    updatedInfo
+    updatedInfo,
+    status204
 }
